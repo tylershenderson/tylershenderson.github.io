@@ -27,6 +27,7 @@ header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 700px;
+    color: midnightblue
 }
 
 header, footer, footer a {
