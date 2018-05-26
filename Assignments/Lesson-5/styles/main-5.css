@@ -15,16 +15,33 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {color: green;}
+nav {}
 nav button {}
-nav ul {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1
+}
 nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a {
+
+    color: #000;
+    text-decoration: none;
+    padding: 8px, 16px
+}
+nav ul li.active a {
+    background-color: #4caf50;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
 
 main {}
-main h2 {}
+main h2 {color: darkgreen}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
 
