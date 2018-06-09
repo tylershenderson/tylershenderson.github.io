@@ -1,0 +1,40 @@
+@media only screen and (min-width: 60em ) {
+    
+    .zxc {
+    display: inherit;
+    }
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:25% 25% 25%;
+    }
+#qwe, #asd, #zxc {
+    width: 85%;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    }
+.grid {
+    border: 1px solid rgb(0,95,107); 
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    }
+  #qwe:hover{
+    padding: 5px;
+        width:200%;
+    transition-duration: 1s;
+    }
+
+#asd:hover{
+    padding: 5px;
+        width:200%;
+    transition-duration: 1s;
+    }
+#zxc:hover{
+    padding: 5px;
+        width:200%;
+    transition-duration: 1s;
+    }
+  }

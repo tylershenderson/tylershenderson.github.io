@@ -1,0 +1,83 @@
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: sans-serif
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+   
+}
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+    header h1 { 
+        font-size: 15px;
+        margin: 0px;
+    }
+    header img {
+        width:35px;
+    height:19px;
+    }
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+}
+nav ul li {}
+nav ul li a {
+
+    color: #000;
+    text-decoration: none;
+    padding: 8px, 16px
+}
+nav ul li.active a {
+    background-color: #4caf50;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+main {}
+main h2 {color: darkgreen}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+table{
+    visibility: hidden;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:80%;
+    }
+#qwe, #asd, #zxc {
+    width: 80%;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    }
+.grid {
+    border: 1px solid rgb(0,95,107); 
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 30px;
+    
+    }
