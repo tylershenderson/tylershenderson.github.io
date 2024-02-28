@@ -4,7 +4,8 @@
     margin: 0px;
     border: 0px;
     color: white;
-    font-family: Helvetica;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
     }
     html, body {
         padding:0;
@@ -17,6 +18,7 @@ nav {
     padding: 15px;
     width: 100%;
     background-color: black;
+
     }
 
 ul {
@@ -34,6 +36,8 @@ li {
 div {
     position: relative;
     top: 50px;
+    display: flex;
+    flex-direction: row;
     }   
 
 .banner img {
@@ -42,11 +46,13 @@ div {
     }
 
 article {
+    min-height: 100%;
     width: 50%;
     display: inline-block;
     background-color: darkslategrey;
     color: white;
-    height: 200px;
     text-align: center;
     }  
-
+h1 {
+    font-family: "Playfair Display";
+}
