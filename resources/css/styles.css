@@ -73,10 +73,14 @@ div.banner {
 }
 
 #two{
-    margin: auto;
+    margin: 8% auto 20%;
     border: 4px white solid;
     padding: 5% 5%;
 }
+#four {
+    display: none;
+}
+
 h1{
     font-family: "Noto Sans";
     letter-spacing: -2px;
@@ -154,10 +158,129 @@ footer{
     margin: 0px;
     position: relative;
     top: -2px;
+
 }
 footer li {
     margin: 2px 40px;
     list-style: none;
+    }
+footer ul     
+
 }
+@media screen and (max-width: 1358px) {
+    #one {
+        display: none;
+         }
+    .banner article  {
 
+        width: 100%;
+        background-image: url("../images/desk.jpg");
+        background-size: cover;    
+        aspect-ratio: 5184/3456;
+    }     
 
+    .banner article::before {
+        content: ""; /* Required for pseudo-elements */
+        position: absolute; /* Position the pseudo-element absolute within the container */
+        top: 0;
+        left: 0;
+        width: 100%; /* Make the pseudo-element cover the entire container */
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+      }
+    .banner section {
+        position: relative;
+    }  
+    .goals ul {
+         text-align: left;  
+         width: 70%; 
+    }
+    .projects ol {
+        text-align: left;   
+        width: 70%; 
+   }
+} 
+@media screen and (max-width: 707px) {
+        h2 {
+            font-size: 36px;
+            margin: 0px;
+            margin-top: 40px;
+            letter-spacing: -2px; 
+        }
+        section#two{
+            padding: 2%
+        }
+        h1 {
+            width: 300px;
+        }
+        div.story, div.goals, div.projects {
+            margin-top: 50px;
+        }
+
+}
+@media screen and (max-width: 583px) {
+        h1 {
+            font-size: 36px
+        }
+        nav li {
+            font-size: 16px;
+        }
+        * {
+            font-size: 16px;
+        }
+        div.story, div.goals, div.projects {
+            margin-top: 15px;
+            height: ;
+        }
+        h2 {
+            font-size: 36px;
+            margin: 0px;
+            margin-top: 0px;}
+        div.projects{
+            padding-bottom: 50px;
+        }    
+}
+@media screen and (max-width: 583px) {
+    footer{
+        top: 0px;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer li {
+        margin: 0px 0px;
+        list-style: none;
+    }
+    div.story, div.goals, div.projects {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 419px) {
+    #three {
+        display: none;
+    }
+    #four{
+        display:flex;
+    }
+    h2{
+        font-size: 24px;
+        margin: 0px
+    }
+    div.goals{
+        padding: 0px;
+        height: 350px;
+    }
+    div.story{
+        margin-top: 50px;
+    }
+    h1{
+        width: 90%;
+        margin: auto;
+    }
+   nav{
+    100%
+   } 
+   #four{
+    width: 320px;
+   }
+}
