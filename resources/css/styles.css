@@ -11,6 +11,7 @@
     html, body {
         padding:0;
         margin:0;
+        scroll-behavior: smooth;
     }
     main{
         position: relative;
@@ -41,9 +42,15 @@ nav ul {
 
 nav li {
     display: inline-block;
-    /* width: 24%; */
     top: 15px;
     font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    }
+  nav a {
+        color: white;
+        text-decoration: none;
     }
 
 div.banner {
@@ -164,9 +171,15 @@ footer li {
     margin: 2px 40px;
     list-style: none;
     }
-footer ul     
-
+footer ul{     
+    padding-bottom: 20px; 
 }
+  a {
+    color: white;
+    }
+a:hover {
+        cursor: pointer;
+        }
 @media screen and (max-width: 1358px) {
     #one {
         display: none;
