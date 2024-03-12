@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 300px; /* Set the height of the container */
+      position: relative; /* Ensure relative positioning for the absolute element */
+    }
+
+    .flex-element {
+      flex: 1; /* Each flex element takes up half of the container */
+      background-color: lightgray;
+      border: 1px solid gray;
+    }
+
+    .overlap-element {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="flex-element">
+    Flex Element 1
+  </div>
+  <div class="flex-element">
+    Flex Element 2
+  </div>
+  <div class="overlap-element">
+    Overlapping Element
+  </div>
+</div>
+
+</body>
+</html>

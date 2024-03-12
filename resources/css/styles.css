@@ -6,36 +6,45 @@
     color: white;
     font-family: "Poppins";
     scroll-behavior: smooth;
+    font-size: 20px;
+
     }
     html, body {
         padding:0;
         margin:0;
+
     }    
+    main{
+        position: relative;
+        top: 70px;
+    } 
 
 nav {
     position: fixed;
-    height: 50px;
-    padding: 15px;
+    height: 70px;
+    padding: auto;
     width: 100%;
     background-color: black;
-
     }
 
 ul {
     text-align: center;
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     }
 
 li {
     display: inline-block;
-    width: 24%;
+    /* width: 24%; */
     top: 15px;
     font-size: 20px;
     }
 
 div {
-    position: relative;
-    top: 50px;
+    
     display: flex;
     flex-direction: row;
     }   
@@ -43,16 +52,41 @@ div {
 .banner img {
     width: 50%;
     display: inline-block;
+    aspect-ratio: 5184 / 3456;
     }
 
 article {
     min-height: 100%;
     width: 50%;
-    display: inline-block;
     background-color: darkslategrey;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 10%; */
     }  
+.banner section{
+    margin: 20%;
+    border: 4px white solid;
+    padding: 5% 5%;
+}    
 h1 {
     font-family: "Playfair Display";
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+/* svg {
+    position: relative;
+    top: -470px;
+    width: 100%;
+    z-index: 10000;
+} */
+
+svg {
+    position: absolute;
+    bottom: 0;
+    /* transform: translateX(-50%); */
+    z-index: 3;
+    /* border: 3px solid black; */
 }
